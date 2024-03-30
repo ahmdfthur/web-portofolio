@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(250px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 :root {
       --primaryTextColor: #232e35;
       --secondaryTextColor: #656d72;
@@ -163,6 +173,13 @@ a {
     margin: 0.5rem 0 1rem;
 }
 
+.hero-left {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;    
+}
+
 .hero-left p {
     font-size: 100;
 }
@@ -173,6 +190,10 @@ a {
 
 .hero-right img {
     width: 90%;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
 }
 
 .hero-right {
